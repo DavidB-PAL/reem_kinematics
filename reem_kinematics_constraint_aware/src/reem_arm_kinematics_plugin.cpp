@@ -476,7 +476,8 @@ bool ReemKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose,
   KDL::JntArray jnt_pos_in;
   KDL::JntArray jnt_pos_out;
   KDL::JntArray jnt_seed_state;
-  jnt_pos_in.resize(dimension_);
+  //jnt_pos_in.resize(dimension_);
+  jnt_seed_state.resize(dimension_);
   KDL::JntArray posture(dimension_);
   for(unsigned int i=0; i < dimension_; ++i)
   {
@@ -611,7 +612,8 @@ bool ReemKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose,
   KDL::JntArray jnt_pos_in;
   KDL::JntArray jnt_pos_out;
   KDL::JntArray jnt_seed_state;
-  jnt_pos_in.resize(dimension_);
+  //jnt_pos_in.resize(dimension_);
+  jnt_seed_state.resize(dimension_);
   KDL::JntArray posture(dimension_);
   for(unsigned int i=0; i < dimension_; ++i)
   {
