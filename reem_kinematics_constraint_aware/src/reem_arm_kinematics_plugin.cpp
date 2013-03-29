@@ -608,7 +608,6 @@ bool ReemKinematicsPlugin::searchPositionIK(const geometry_msgs::Pose &ik_pose,
                    ik_pose.orientation.w);
 
   //Do the IK
-  //Do the IK
   KDL::JntArray jnt_pos_in;
   KDL::JntArray jnt_pos_out;
   KDL::JntArray jnt_seed_state;
