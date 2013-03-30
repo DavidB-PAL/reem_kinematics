@@ -165,8 +165,8 @@ bool ReemKinematicsPlugin::initialize(const std::string& group_name,
   double max_delta_q;
   double velik_gain;
 
-  private_handle.param("max_solver_iterations", max_iterations, 500);
-  private_handle.param("max_search_iterations", max_search_iterations_, 3);
+  private_handle.param("max_solver_iterations", max_iterations, 2001);
+  private_handle.param("max_search_iterations", max_search_iterations_, 11);
   private_handle.param("epsilon", epsilon, 1e-5);
   private_handle.param("max_delta_x", max_delta_x, 0.006);
   private_handle.param("max_delta_q", max_delta_q, 0.03);
